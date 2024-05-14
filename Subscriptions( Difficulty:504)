@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        for (int i = 0; i < T; i++) {
+            int N = sc.nextInt();
+            int X = sc.nextInt();
+            if (N <= 6) {
+                System.out.println(X);
+            } else if (N % 6 == 0) {
+                int k = N / 6;
+                System.out.println(k * X);
+            } else {
+                double k = Math.ceil((double) N / 6); 
+                System.out.println((int) k*X); 
+            }
+        }
+    }
+}
