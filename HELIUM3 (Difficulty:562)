@@ -1,0 +1,32 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner a=new Scanner(System.in);
+		int T=a.nextInt();
+		while(T-->0)
+		{
+		    int A=a.nextInt();
+		    int B=a.nextInt();
+		    int X=a.nextInt();
+		    int Y=a.nextInt();
+		    int x1=A*B;
+		    int y1=X*Y;
+		    if(x1<=y1)
+		    {
+		        System.out.println("Yes");
+		    }
+		    else
+		    {
+		        System.out.println("No");
+		    }
+		    
+		}
+
+	}
+}
