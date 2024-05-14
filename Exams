@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner in=new Scanner(System.in);
+		long T=in.nextLong();
+		while(T-->0)
+		{
+		    int X=in.nextInt();
+		    int Y=in.nextInt();
+		    int Z=in.nextInt();
+		    int k=(X*Y)/2;
+		    if(Z>k)
+		    {
+		        System.out.println("YES");
+		    }
+		    else
+		    {
+		        System.out.println("NO");
+		    }
+		}
+
+	}
+}
