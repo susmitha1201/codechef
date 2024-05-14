@@ -1,0 +1,38 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		
+		Scanner in=new Scanner(System.in);
+		int T=in.nextInt();
+		while(T-->0)
+		{
+		    int N=in.nextInt();
+		    int X=in.nextInt();
+		    int Y=in.nextInt();
+		    int[] A=new int[N];
+		    int sum=0;
+		    int sum1=0;
+		    for(int i=0;i<N;i++)
+		    {
+		        A[i]=in.nextInt();
+		        if(A[i]*X>=Y)
+		        {
+		            sum=sum+Y;
+		        }
+		        else
+		        {
+		            sum1=sum1+X*A[i];
+		        }
+		        
+		    }
+		    System.out.println(sum+sum1);
+		}
+
+	}
+}
