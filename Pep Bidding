@@ -1,0 +1,43 @@
+import java.util.*;
+
+class Codechef {
+    public static void main(String[] args) throws java.lang.Exception {
+        Scanner in = new Scanner(System.in);
+        int T = in.nextInt();
+        while (T-- > 0) {
+            int N = in.nextInt();
+
+            int[] attAi = new int[N];
+            int[] defAi = new int[N];
+            int[] attPi = new int[N];
+            int[] defPi = new int[N];
+
+            int s1 = 0, s2 = 0, s3 = 0, s4 = 0;
+
+            for (int i = 0; i < N; i++) {
+                attAi[i] = in.nextInt();
+                s1 += attAi[i];
+            }
+            for (int i = 0; i < N; i++) {
+                defAi[i] = in.nextInt();
+                s2 += defAi[i];
+            }
+            for (int i = 0; i < N; i++) {
+                attPi[i] = in.nextInt();
+                s3 += attPi[i];
+            }
+            for (int i = 0; i < N; i++) {
+                defPi[i] = in.nextInt();
+                s4 += defPi[i];
+            }
+
+            if (s1 > s3 && s2 > s4) {
+                System.out.println("A");
+            } else if (s3 > s1 && s4 > s2) {
+                System.out.println("P");
+            } else {
+                System.out.println("DRAW");
+            }
+        }
+    }
+}
