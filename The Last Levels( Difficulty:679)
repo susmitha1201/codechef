@@ -1,0 +1,40 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		int div=0,tot=0;
+		while(T-->0)
+		{
+		    int X=sc.nextInt();
+		    int Y=sc.nextInt();
+		    int Z=sc.nextInt();
+		    if(X<=3)
+		    {
+		        System.out.println(X*Y);
+		    }
+		    else
+		    {
+		        int s=X*Y;
+		        div=X/3;
+		        tot=X-div*3;
+		        if(tot==0)
+		        {
+		            System.out.println((div-1)*Z+s);
+		            
+		        }
+		        else
+		        {
+		            System.out.println(div*Z+s);
+		        }
+		    }
+		}
+
+	}
+}
